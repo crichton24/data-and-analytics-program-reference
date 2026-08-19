@@ -1,52 +1,87 @@
 # Data and Analytics Reference Framework
 
-Hub for components of a boilerplate data and analytics program including:  Governance, Data, Analytics, Data Science, and AI.
+Hub for a boilerplate data and analytics program spanning Governance, Data,
+Analytics, Data Science, and AI.
 
 ## Purpose
-This is a series of repos containing working reference architectures for an enterprise grade Data & Analytics program.  It stis at the intersectino of technology and oeprations, serving as an example of deploying infrastructure with best practices and governance for enterprise deploymentes.  It's intent is to cover broadly with key focus on _program_ centric items over performance.  So it focuses on things like tagging, architecture decisions, and standardization.  
+
+A series of repositories containing working reference architectures for an
+enterprise-grade data and analytics program. It sits at the intersection of
+technology and operations, demonstrating infrastructure deployed with the
+governance and standards an enterprise would require.
+
+The emphasis is deliberately broad rather than deep, and **program-centric
+rather than performance-centric** — tagging, architecture decisions, naming,
+and standardization over throughput and optimization.
 
 ## Audience
-The core audience is for owners of data programs to be refined for their own deployments.
 
-## How to Use
-Program owners should start by reviewing the technology selections and [Governance](https://github.com/crichton24/data-analytics-governance-standards) documents and compare those to your own internal demands.
+Owners of data programs looking for a boiler-plate starter or comparative reference for their own deployments.
 
-Managers and team leads of each of the below functions should breifly review the components of their respective repos then the governance sections.
+## How to use
 
-## Content
+**Program owners** should start with the technology selections below and the
+[Governance](https://github.com/crichton24/data-analytics-governance-standards)
+standards, comparing both against their own internal requirements.
 
-- `DONE`[Overview](https://github.com/crichton24/data-and-analytics-program-reference)
-- `DONE`[Governance](https://github.com/crichton24/data-analytics-governance-standards):  standards, norms, and principles
-- `DONE`[Data Management](https://github.com/crichton24/data-management-reference):  architecture and cdoe
-- `WIP`Analytics:  dashboards for KPIs, governance adherence, and data performance
-- `WIP` Data Science:  time forecasts, segmentation, and prediction
-- `WIP` AI:  co-pilot, co-work, and autonomous deployments
+**Managers and team leads** should review the component repository for their
+function, then the governance sections that apply to it.
 
+## Components
+
+| Status | Component | Contents |
+|---|---|---|
+| ✅ | [Overview](https://github.com/crichton24/data-and-analytics-program-reference) | This repository |
+| ✅ | [Governance](https://github.com/crichton24/data-analytics-governance-standards) | Standards, norms, and principles |
+| ✅ | [Data Management](https://github.com/crichton24/data-management-reference) | Architecture and code |
+| 🚧 | Analytics | Dashboards for KPIs, governance adherence, and data performance |
+| 🚧 | Data Science | Forecasting, segmentation, and prediction |
+| 🚧 | AI | Co-pilot, co-work, and autonomous deployments |
+
+✅ Complete · 🚧 In progress · ⬜ Not started
 
 ## Technology
-Technology has been chosen to balance low-cost with best-in-breed and trasnferrability
 
-- `DONE`**Data Warehouse:  Databricks**:  free version, can easily swap with Snowflake, Redshift, or other OLAP warehouses.
-- `DONE`**Data Storage:  AWS S3**:  inexpensive and broadly accessible.
-- `PARTIAL`**Data Orchestration / Ingestion**
-    - `DONE`**Batch:  Apache Airflow** -- opensource and commonly deployed.  Excellent for lineage, error tracing, and monitoring.
-    - `OPEN`**Stream:  Apache Kafka** --
-- `DONE`**Data Transformation:  dbt** -- best in class for managed and governed data transformation.
-- `OPEN`**Analytics:  <tbd>** --
-- `OPEN`**Data Science: <tbd>** --
-- `WIP`**AI:  Claude** -- excellent code writing co-pilot.
+Selected to balance low cost against best-in-breed capability and
+transferability to other tools.
 
-**Supporting Technology**
-- `DONE`**Version Control:  Github** -- also excellent for ensforcing standards on commit
-- `DONE`**Hosting:  Docker** -- local image purely for cost control.  While secrets are managed, this is not an enterprise grade solution.
-- `DONE`**Coding:  VS Code** -- feature rich components for dbt, GitHub, and docker.
+| Status | Layer | Selection | Rationale |
+|---|---|---|---|
+| ✅ | Data Warehouse | **Databricks** | Free edition. Swappable for Snowflake, Redshift, or another OLAP warehouse |
+| ✅ | Data Storage | **AWS S3** | Inexpensive and broadly accessible |
+| ✅ | Batch Orchestration | **Apache Airflow** | Open source and widely deployed. Strong lineage, error tracing, and monitoring |
+| 🚧 | Stream Ingestion | **Apache Kafka** | Durable log with replay, decoupling producers from consumers |
+| ✅ | Transformation | **dbt** | Best in class for governed, tested transformation |
+| ⬜ | Analytics | *To be determined* | |
+| ⬜ | Data Science | *To be determined* | |
+| 🚧 | AI | **Claude** | Code authoring and review |
+
+**Supporting**
+
+| Status | Purpose | Selection | Rationale |
+|---|---|---|---|
+| ✅ | Version Control | **GitHub** | Also enforces standards at commit and on pull request |
+| ✅ | Hosting | **Docker** | Local images for cost control. Not an enterprise-grade deployment |
+| ✅ | Development | **VS Code** | Strong extension support for dbt, GitHub, and Docker |
 
 ![Application Architecture](images/Application_architecture.png)
-_Note:  Data Warehouse and Visualization tools can be exchanged for other enterprise-grade tools._
+
+*The data warehouse and visualization tools are interchangeable with other
+enterprise-grade equivalents.*
 
 ## Disclaimers
-- This is a reference and boilerplate only.  Deployments will vary based on organizational constraints and requirements
-- While the framework is a working deployment, these repos will fail to deploy as they rely on local & hidden security controls.
-- Code contains no sensitive information or intellectual property
 
+**This is a reference, not a product.** Deployments will vary with
+organizational constraints and requirements.
 
+**These repositories will not deploy as-is.** They depend on local
+credentials and security controls that are deliberately excluded.
+
+**Security choices favor low-cost deployment.** Free tiers and local Docker
+drive several decisions — personal access tokens rather than service
+principals, long-lived credentials rather than assumed roles — that an
+enterprise deployment would make differently. These trade-offs are documented
+in the relevant architecture decision records rather than left implicit.
+
+**No sensitive information or intellectual property is contained in this
+code.**
