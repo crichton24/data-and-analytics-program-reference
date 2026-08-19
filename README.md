@@ -45,6 +45,12 @@ function, then the governance sections that apply to it.
 Selected to balance low cost against best-in-breed capability and
 transferability to other tools.
 
+![Application Architecture](images/application_architecture.png)
+
+*The data warehouse and visualization tools are interchangeable with other
+enterprise-grade equivalents.*
+
+
 | Status | Layer | Selection | Rationale |
 |---|---|---|---|
 | ✅ | Data Warehouse | **Databricks** | Free edition. Swappable for Snowflake, Redshift, or another OLAP warehouse |
@@ -64,10 +70,6 @@ transferability to other tools.
 | ✅ | Hosting | **Docker** | Local images for cost control. Not an enterprise-grade deployment |
 | ✅ | Development | **VS Code** | Strong extension support for dbt, GitHub, and Docker |
 
-![Application Architecture](images/application_architecture.png)
-
-*The data warehouse and visualization tools are interchangeable with other
-enterprise-grade equivalents.*
 
 ## Disclaimers
 
