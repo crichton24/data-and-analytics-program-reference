@@ -21,7 +21,7 @@ Owners of data programs looking for a boiler-plate starter or comparative refere
 ## How to use
 
 **Program owners** should start with the technology selections below and the
-[Governance](https://github.com/crichton24/data-analytics-governance-standards)
+[Governance](https://github.com/crichton24/governance-reference)
 standards, comparing both against their own internal requirements.
 
 **Managers and team leads** should review the component repository for their
@@ -32,7 +32,7 @@ function, then the governance sections that apply to it.
 | Status | Component | Contents |
 |---|---|---|
 | ✅ | [Overview](https://github.com/crichton24/data-and-analytics-program-reference) | This repository |
-| ✅ | [Governance](https://github.com/crichton24/data-analytics-governance-standards) | Standards, norms, and principles |
+| ✅ | [Governance](https://github.com/crichton24/governance-reference) | Standards, norms, and principles |
 | ✅ | [Data Management](https://github.com/crichton24/data-management-reference) | Architecture and code |
 | 🚧 | Analytics | Dashboards for KPIs, governance adherence, and data performance |
 | 🚧 | Data Science | Forecasting, segmentation, and prediction |
