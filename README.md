@@ -3,6 +3,13 @@
 Hub for a boilerplate data and analytics program spanning Governance, Data,
 Analytics, Data Science, and AI.
 
+---
+Author:  Kevin Fournier / [LinkedIn](https://www.linkedin.com/in/kevintfournier/)
+
+Created:  2026-AUG
+
+---
+
 ## Purpose
 
 A series of repositories containing working reference architectures for an
