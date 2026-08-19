@@ -8,9 +8,19 @@ This is a series of repos containing working reference architectures for an ente
 ## Audience
 The core audience is for owners of data programs to be refined for their own deployments.
 
+## How to Use
+Program owners should start by reviewing the technology selections and [Governance](https://github.com/crichton24/data-analytics-governance-standards) documents and compare those to your own internal demands.
+
+Managers and team leads of each of the below functions should breifly review the components of their respective repos then the governance sections.
+
 ## Content
 
-- 
+- `DONE`[Overview](https://github.com/crichton24/data-and-analytics-program-reference)
+- `DONE`[Governance](https://github.com/crichton24/data-analytics-governance-standards):  standards, norms, and principles
+- `DONE`[Data Management](https://github.com/crichton24/data-management-reference):  architecture and cdoe
+- `WIP`Analytics:  dashboards for KPIs, governance adherence, and data performance
+- `WIP` Data Science:  time forecasts, segmentation, and prediction
+- `WIP` AI:  co-pilot, co-work, and autonomous deployments
 
 
 ## Technology
@@ -31,27 +41,12 @@ Technology has been chosen to balance low-cost with best-in-breed and trasnferra
 - `DONE`**Hosting:  Docker** -- local image purely for cost control.  While secrets are managed, this is not an enterprise grade solution.
 - `DONE`**Coding:  VS Code** -- feature rich components for dbt, GitHub, and docker.
 
+![Application Architecture](images/Application_architecture.png)
+_Note:  Data Warehouse and Visualization tools can be exchanged for other enterprise-grade tools._
 
 ## Disclaimers
 - This is a reference and boilerplate only.  Deployments will vary based on organizational constraints and requirements
 - While the framework is a working deployment, these repos will fail to deploy as they rely on local & hidden security controls.
 - Code contains no sensitive information or intellectual property
-
-outline:
-- intro and purpose
-    - low cost, open source tech as examples of data program architecture (replace with your own, enterprise versions or different data warehouse / analytics tool (snowflake, redshift / Sigma, Tableau, PowerBI, etc))
-    - demonstrates intersectino of technology and process for best practices (e.g. s3 for staging storage, airflow for ingestion, dbt for transformation)
-
-- how to use:  
-- content
-    - links to each repo with purpose & state
-    - Governance:  boiler plate guidelines for compliance and team standardization
-    - data:  governed data life cycle with tags from ingestion (source --> s3 --> databricks) to formal data products (dbt:  raw->transform->formal).
-    - analytics:  
-        - 'hub' style deployment:  Corporate KPI dashboard to dept dashboards to functional reports.
-        - governance reporting
-        - D&A performance
-    - data science:  forecasting, segmentation, and prediction
-    - AI:  how used in this deployment:  enabler & fully autonomous
 
 
