@@ -64,7 +64,7 @@ transferability to other tools.
 | ✅ | Hosting | **Docker** | Local images for cost control. Not an enterprise-grade deployment |
 | ✅ | Development | **VS Code** | Strong extension support for dbt, GitHub, and Docker |
 
-![Application Architecture](images/Application_architecture.png)
+![Application Architecture](images/application_architecture.png)
 
 *The data warehouse and visualization tools are interchangeable with other
 enterprise-grade equivalents.*
