@@ -1,22 +1,27 @@
-# Data and Analytics Reference Framework
+# Data and Analytics Reference Program
 
-Hub for a boilerplate data and analytics program spanning Governance, Data,
-Analytics, Data Science, and AI.
+Personal hub for a boilerplate enterprise data and analytics program spanning governance, data,
+analytics, data science/ML, and AI.
 
 ## Purpose
 
-A series of repositories containing working reference architectures for an
-enterprise-grade data and analytics program. It sits at the intersection of
-technology and operations, demonstrating infrastructure deployed with the
-governance and standards an enterprise would require.
+References for best practices and design recommendations in the operational lattice of a 
+Data & Analytics Program, especially useful when onboarding new teams and gap-comparing existing deployments.
 
-The emphasis is deliberately broad rather than deep, and **program-centric
-rather than performance-centric** — tagging, architecture decisions, naming,
-and standardization over throughput and optimization.
+Essentialy, it answers 'what does good look like'.
+
+The emphasis is deliberately broad, focusing on **Program** over **Performance**, though many architecture
+decisions support both.  The crititical focus is how various technology and operations knit together 
+in a Governed framework (e.g. consistent tags, definitions, and naming across technology).
 
 ## Audience
 
 Owners of data programs looking for a boiler-plate starter or comparative reference for their own deployments.
+
+## Privacy and Security
+
+See [Privacy and Security](docs/privacy-and-security.md) for details on what's been deployed and existing gaps
+(some are unavoidable due to Free Tier constraints).
 
 ## How to use
 
