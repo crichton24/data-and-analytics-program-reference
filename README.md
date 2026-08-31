@@ -3,6 +3,13 @@
 Personal hub for a boilerplate enterprise data and analytics program spanning governance, data,
 analytics, data science/ML, and AI.
 
+---
+Author:  Kevin Fournier / [LinkedIn](https://www.linkedin.com/in/kevintfournier/)
+
+Created:  2026-AUG
+
+---
+
 ## Purpose
 
 References for best practices and design recommendations in the operational lattice of a 
