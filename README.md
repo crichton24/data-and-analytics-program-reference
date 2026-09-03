@@ -72,7 +72,8 @@ enterprise-grade equivalents.*
 | ✅ | Transformation | **dbt** | Best in class for governed, tested transformation |
 | ⬜ | Analytics | *To be determined* | |
 | ⬜ | Data Science | *To be determined* | |
-| 🚧 | AI | **Claude** | Code authoring and review |
+| 🚧 | AI | **Claude** | Direct data analysis via Databricks MCP and code development. |
+| ✅ | Governance | **Open Metadata** | Aggregator for data governance (tagging, lineage, glossary, etc) |
 
 **Supporting**
 
