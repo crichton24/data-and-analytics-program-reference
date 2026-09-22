@@ -8,6 +8,9 @@ Author:  Kevin Fournier / [LinkedIn](https://www.linkedin.com/in/kevintfournier/
 
 Created:  2026-AUG
 
+Snowflake is interchangeable for Databricks in this architecture.
+![Application Architecture](images/application_architecture.png)
+
 ---
 
 ## Purpose
